@@ -1,0 +1,29 @@
+import turtle
+window = turtle.Screen()
+bubbas = turtle.Turtle()
+bubbas.color("green", "black")
+bubbas.left(90) #turns turtle left 90 degrees
+bubbas.forward(100)
+bubbas.color("green", "black")
+bubbas.begin_fill()
+bubbas.right(90)
+bubbas.circle (10)
+bubbas.end_fill()
+
+
+
+
+
+
+for i in range (1,24):
+    if (bubbas.color() == ("red", "black")):
+        bubbas.color("blue", "black")
+    elif (bubbas.color() == ("orange", "black")):
+          bubbas.color("blue", "black")
+    bubbas.left (15)
+    bubbas.forward (50)
+    bubbas.left (157)
+    bubbas.forward (50)
+#tidy up window
+
+window.exitonclick()
